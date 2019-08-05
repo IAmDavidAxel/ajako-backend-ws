@@ -1,0 +1,2 @@
+language: java
+test: mvn test
