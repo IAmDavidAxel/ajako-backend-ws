@@ -1,6 +1,8 @@
 package domain.credential;
 
+import domain.datetime.DateTime;
 import domain.password.Password;
+import domain.token.IllegalTokenValidationException;
 import domain.token.Token;
 import domain.user.AccessLevel;
 
@@ -15,5 +17,32 @@ public class Credential {
 		this.password = password;
 		this.token = token;
 		this.accessLevel = accessLevel;
+	}
+
+	public Token generateToken() {
+
+		if (token==null){
+			this.token = new Token(new DateTime());
+		}
+
+		this.token.generate();
+
+		return token;
+	}
+
+	public void verify(String password) throws MismatchedPasswordException{
+
+		this.password.verify(password);
+
+	}
+
+	public boolean isValid(String decodedToken) throws IllegalTokenValidationException {
+		this.token.verifyValue(decodedToken);
+
+		return false;
+	}
+
+	public void invalidateToken() {
+		token.invalidate();
 	}
 }

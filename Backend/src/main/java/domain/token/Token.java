@@ -56,6 +56,22 @@ public class Token {
 		}
 	}
 
+	public String getTokenValue() {
+		return tokenValue;
+	}
+
+	public DateTime getCreationDate() {
+		return createdAt;
+	}
+
+	public TokenExpirationPolicy getPolicy() {
+		return policy;
+	}
 
 
+	public void invalidate() {
+		status = ValidationStatus.INVALID;
+
+		tokenValue = "";
+	}
 }

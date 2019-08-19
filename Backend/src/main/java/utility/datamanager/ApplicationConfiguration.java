@@ -2,6 +2,7 @@ package utility.datamanager;
 
 public class ApplicationConfiguration {
 
+	public static final String PROPERTIES_FILE_NAME = "couronneAfroBackend.properties";
 	/**
 	 * Security properties configuration Password policy: basic
 	 * Expiration : midterm, shorterm, longterm
