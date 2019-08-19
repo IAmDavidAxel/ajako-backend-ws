@@ -1,5 +1,6 @@
 package domain.token;
 
+import javax.ws.rs.container.ContainerRequestContext;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 
@@ -52,4 +53,5 @@ public class TokenEncoder {
 	public String getToken() {
 		return token;
 	}
+
 }

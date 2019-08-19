@@ -45,4 +45,8 @@ public class Credential {
 	public void invalidateToken() {
 		token.invalidate();
 	}
+
+	public boolean haveAccessTo(AccessLevel accessLevel) {
+		return this.accessLevel == accessLevel;
+	}
 }
