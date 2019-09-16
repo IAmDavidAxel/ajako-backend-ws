@@ -9,12 +9,13 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
+import static org.mockito.BDDMockito.willReturn;
 import static org.mockito.Mockito.verify;
 
 @RunWith(MockitoJUnitRunner.class)
 public class AccessLevelServiceTest {
 
-	private static final String USERNAME = "Mamamam";
+	private static final String USERNAME = "Mamamama";
 	private static final AccessLevel CLIENT_ACCESS_LEVEL = AccessLevel.CLIENT;
 	private AccessLevelService accessLevelService;
 
@@ -24,8 +25,10 @@ public class AccessLevelServiceTest {
 	private Credential credential;
 
 	@Before
-	public void setUp(){
+	public void setUp() throws Exception{
 		accessLevelService = new AccessLevelService(credentialRepository);
+
+		willReturn(credential).given(credentialRepository).findByUsername(USERNAME);
 	}
 
 	@Test

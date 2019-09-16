@@ -2,7 +2,7 @@ package domain.user;
 
 public enum AccessLevel {
 
-	CLIENT("CLIENT"), DRIVER("DRIVER"), MANAGER("MANAGER");
+	CLIENT("CLIENT"), BARBER("BARBER"), MANAGER("MANAGER");
 
 	private String accessLevel;
 

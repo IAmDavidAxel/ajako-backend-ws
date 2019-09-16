@@ -30,4 +30,6 @@ public class MessageDataManager {
 	public static final String LOGOUT_SUCCEEDED = "Logout succeeded, you need to login to access you account.";
 
 	public static final String BARBER_CREATED = "Barber successfully created";
+	public static final String HAIRCUT_CREATED = "Coiffure crée avec succes";
+	public static final String APPOINTMENT_SUCCESSFULLY_MADE = "votre rendez vous coiffure a bien été fait :)";
 }

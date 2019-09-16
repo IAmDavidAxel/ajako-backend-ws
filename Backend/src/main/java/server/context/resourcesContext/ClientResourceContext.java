@@ -32,7 +32,7 @@ public class ClientResourceContext {
 		CredentialFactory credentialFactory = new CredentialFactory();
 		UserFactory<Client, ClientDto> clientFactory = new ClientFactory(passwordFactory,tokenFactory,userIdFactory,userProfileFactory,credentialFactory);
 
-		ClientService clientService = new ClientService((ClientFactory) clientFactory,clientRepository);
+		ClientService clientService = new ClientService((ClientFactory) clientFactory,clientRepository, barberRepository);
 
 		return new ClientJsonResource(clientService);
 	}
