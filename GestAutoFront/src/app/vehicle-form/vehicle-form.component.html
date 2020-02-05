@@ -1,0 +1,33 @@
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col">
+      <form  [formGroup]="vehicleForm" (ngSubmit)="onSubmit()" class="text-center border border-light p-5">
+        <div class="form-group">
+          <label for="plateNumberVehicle">Numéro de plaque d'immatriculation</label>
+          <input type="text" class="form-control" id="plateNumberVehicle" formControlName="plateNumber"
+                 placeholder="Plaque d'immatriculation">
+        </div>
+        <div class="form-group">
+          <label for="modelVehicle">Modèle</label>
+          <input type="text" class="form-control" formControlName="model"  id="modelVehicle" placeholder="model de véhicule">
+        </div>
+        <div class="form-group">
+          <label for="typeVehicle">Type</label>
+          <input type="text" class="form-control" formControlName="type"  id="typeVehicle" placeholder="type de véhicule">
+        </div>
+        <div class="form-group">
+          <label for="colorVehicle">Couleur</label>
+          <input type="text" class="form-control" formControlName="color"  id="colorVehicle" placeholder="couleur du véhicule">
+        </div>
+        <button class="btn btn-info my-4 btn-block" type="submit">Ajouter</button>
+
+        <hr>
+      </form>
+    </div>
+    <div class="col">
+      photo
+    </div>
+  </div>
+
+</div>

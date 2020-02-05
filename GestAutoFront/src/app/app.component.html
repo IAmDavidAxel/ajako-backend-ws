@@ -1,0 +1,38 @@
+<div  class="container ">
+
+  <h3> Gestion des parcs Auto Sonabel</h3>
+
+</div>
+
+<div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="" height="50px" width="200px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="addVehicle">Ajouter un véhicule</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  routerLink="addDriver"> Ajouter un chauffeur</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="findDriver">Trouver un chauffeur</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="findVehicle">Trouver un vehicule</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="createMission">Creer une mission</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <router-outlet></router-outlet>
+</div>

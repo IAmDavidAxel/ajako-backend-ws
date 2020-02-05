@@ -1,0 +1,61 @@
+<div class="container-fluid">
+
+  <div class="row">
+
+      <div class="col">
+        <form  [formGroup]="missionForm"  (ngSubmit)="onSubmit()"  class="text-center border border-light p-5">
+          <div class="form-group">
+            <label for="missionOrderNumberGroup">Numéro de l'ordre de mission</label>
+            <input type="text" class="form-control" id="missionOrderNumberGroup" formControlName="order_number"
+                   placeholder="Numéro de l'odre de mission">
+          </div>
+          <div class="form-group">
+            <label for="missionDescriptionGroup">Description de la mission</label>
+            <input type="text" class="form-control" formControlName="mission_description"  id="missionDescriptionGroup" placeholder="Description de la mission">
+          </div>
+          <div class="form-group">
+            <label for="driverDesignatedGroup">Nom du chauffeur choisi</label>
+            <input type="text" class="form-control" formControlName="driver_name"  id="driverDesignatedGroup" placeholder="Chauffeur choisi">
+          </div>
+          <div class="form-group">
+            <label for="vehicleDesignatedGroup">Voiture choisi pour la mission</label>
+            <input type="text" class="form-control" formControlName="plate_number"  id="vehicleDesignatedGroup" placeholder="choisir le vehicule choisis">
+          </div>
+
+          <div class="form-group">
+            <label for="missionLocationGroup">Lieu de la mission </label>
+            <input type="text" class="form-control" formControlName="location"  id="missionLocationGroup" placeholder="Lieu de la mission">
+          </div>
+
+          <div class="form-group">
+            <label for="missionStartGroup">Date de debut de la mission</label>
+            <input type="text" class="form-control" formControlName="mission_start_date" id="missionStartGroup" placeholder="date de debut de la mission">
+          </div>
+
+          <div class="form-group">
+            <label for="missionEndGroup">Date de fin de la mission</label>
+            <input type="text" class="form-control" id="missionEndGroup" placeholder="date de fin de la mission" formControlName="mission_end_date">
+          </div>
+
+          <div class="form-group">
+            <label for="driverCompanionGroup"> Accompagnant</label>
+            <input type="text" class="form-control" id="driverCompanionGroup" formControlName="driver_companion">
+          </div>
+
+          <div class="form-group">
+            <label for="meanOfTransportGroup">Moyen de déplacement</label>
+            <input type="text" class="form-control" id="meanOfTransportGroup" formControlName="mean_of_transport" placeholder="moyen de deplacement">
+          </div>
+
+          <button class="btn btn-info my-4 btn-block" type="submit">Ajouter</button>
+        </form>
+
+      </div>
+    <div class="col">
+      <img src="assets/img/mission.jpg" alt="mission">
+    </div>
+
+
+  </div>
+
+</div>

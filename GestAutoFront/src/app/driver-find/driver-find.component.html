@@ -1,0 +1,43 @@
+<div class="container-fluid">
+  <div class="row">
+
+    <h6> Ecrivez le nom d'un chauffeur pour le retrouver </h6>
+  </div>
+
+  <div class="row">
+
+
+    <form class="form-inline my-2 my-lg-0" [formGroup]="driverForm">
+      <input class="form-control mr-sm-2" type="search" formControlName="driverName" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="getDriver()">Search</button>
+    </form>
+
+    <br>
+
+    <div class="row">
+    <div class="card" style="width: 18rem;" *ngFor="let driver of drivers">
+      <img class="card-img-top" src="assets/img/SIRIKI.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{driver.first_name}}</h5>
+        <p class="card-text">{{driver.last_name}}</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">{{driver.cell_phone_number}}</li>
+        <li class="list-group-item">{{driver.driver_licence_number}}</li>
+        <li class="list-group-item">{{driver.birth_date}}</li>
+      </ul>
+      <div class="card-body">
+     <button class="btn btn-outline-info my-2 my-sm-0" routerLink="sendToMission"> associez a un véhicule</button>
+      </div>
+    </div>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+</div>

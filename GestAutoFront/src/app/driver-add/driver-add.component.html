@@ -1,0 +1,45 @@
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col">
+      <form   [formGroup]="driverForm" (ngSubmit)="onSubmit()" class="text-center border border-light p-5">
+        <div class="form-group">
+          <label for="name">Nom</label>
+          <input type="text" class="form-control" id="name" formControlName="first_name"
+                 placeholder="nom du chauffeur">
+        </div>
+        <div class="form-group">
+          <label for="lastNameForm">Prénom</label>
+          <input type="text" class="form-control" formControlName="last_name"  id="lastNameForm" placeholder="prénom du chauffeur">
+        </div>
+        <div class="form-group">
+          <label for="idNumber">Numéro de la CNIB</label>
+          <input type="text" class="form-control" formControlName="id_number"  id="idNumber" placeholder="numéro de CNIB">
+        </div>
+        <div class="form-group">
+          <label for="cellPhoneNumber">Numéro de téléphone</label>
+          <input type="text" class="form-control" formControlName="cell_phone_number"  id="cellPhoneNumber" placeholder="numéro de téléphone">
+        </div>
+
+        <div class="form-group">
+        <label for="birthDate">Jour de naissance</label>
+        <input type="text" class="form-control" formControlName="birth_date"  id="birthDate" placeholder="jour de naissance">
+      </div>
+
+        <div class="form-group">
+          <label for="driverLicenceNumber">Numéro du permis de conduire</label>
+          <input type="text" class="form-control" formControlName="driver_licence_number"  id="driverLicenceNumber" placeholder="numéro du permis de conduire">
+        </div>
+
+        <button class="btn btn-info my-4 btn-block" type="submit">Ajouter</button>
+
+        <hr>
+      </form>
+    </div>
+    <div class="col">
+      photo
+    </div>
+  </div>
+
+</div>
+
