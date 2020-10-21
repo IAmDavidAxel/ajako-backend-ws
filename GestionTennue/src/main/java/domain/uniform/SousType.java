@@ -1,0 +1,11 @@
+package domain.uniform;
+
+public enum SousType {
+	PANTACOURT_MAILLOT,
+	PANTALON_SURVETEMENT,
+	PANTALON_MAILLOT,
+
+	TISSU_PANTALON_JUPE,
+	PAGNE_DE_CHEMISE,
+	TEE_SHIRT
+}
