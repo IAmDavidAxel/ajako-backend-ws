@@ -1,4 +1,4 @@
-package com.example.ajakobackendserver.application.user;
+package com.example.ajakobackendserver.application.service.user;
 
 import com.example.ajakobackendserver.api.dto.user.UserDto;
 import com.example.ajakobackendserver.domain.user.User;

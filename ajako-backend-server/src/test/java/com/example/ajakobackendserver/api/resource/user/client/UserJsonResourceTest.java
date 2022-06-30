@@ -2,7 +2,7 @@ package com.example.ajakobackendserver.api.resource.user.client;
 
 
 import com.example.ajakobackendserver.api.dto.user.UserDto;
-import com.example.ajakobackendserver.application.user.UserService;
+import com.example.ajakobackendserver.application.service.user.UserService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

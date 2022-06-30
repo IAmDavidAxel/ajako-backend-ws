@@ -1,6 +1,7 @@
-package com.example.ajakobackendserver.application.user;
+package com.example.ajakobackendserver.application.service.user;
 
 import com.example.ajakobackendserver.api.dto.user.UserDto;
+import com.example.ajakobackendserver.application.service.user.UserService;
 import com.example.ajakobackendserver.domain.user.User;
 import com.example.ajakobackendserver.domain.user.UserFactory;
 import com.example.ajakobackendserver.domain.user.UserRepository;
@@ -10,7 +11,6 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
-import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.willReturn;
 import static org.mockito.Mockito.verify;
 
